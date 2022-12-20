@@ -2,8 +2,10 @@ version: 1
 accounts:
   - name: seko
     coins: ["100000000000ucoid"]
+    mnemonic: "guitar patient ride brass hint leader hen alpha tooth wrap pear ghost sail belt acid market wrestle turtle eye angle pig nest essay state"
   - name: fauci
     coins: ["100000000000ucoid"]
+    mnemonic: "later vivid cage sign illness duck leave foster basket exhaust gossip drama kidney faculty hip deputy outside tribe long cattle sibling jealous pave cinnamon"
 validators:
   - name: seko
     bonded: "100000000ucoid"
@@ -16,7 +18,7 @@ client:
     path: "vue/src/store"
 faucet:
   name: fauci
-  coins: ["1000000"]
+  coins: ["1000000ucoid"]
 
 genesis:
   chain_id: "cosmid-dev-1"
