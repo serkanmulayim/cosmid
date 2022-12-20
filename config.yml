@@ -1,12 +1,12 @@
 version: 1
 accounts:
-  - name: alice
-    coins: ["20000token", "200000000stake"]
-  - name: bob
-    coins: ["10000token", "100000000stake"]
+  - name: seko
+    coins: ["100000000000ucoid"]
+  - name: fauci
+    coins: ["100000000000ucoid"]
 validators:
-  - name: alice
-    bonded: "100000000stake"
+  - name: seko
+    bonded: "100000000ucoid"
 client:
   openapi:
     path: "docs/static/openapi.yml"
@@ -15,5 +15,23 @@ client:
   vuex:
     path: "vue/src/store"
 faucet:
-  name: bob
-  coins: ["5token", "100000stake"]
+  name: fauci
+  coins: ["1000000"]
+
+genesis:
+  chain_id: "cosmid-dev-1"
+  app_state:
+    staking:
+      params:
+        bond_denom: "ucoid"
+    mint:
+      params:
+        mint_denom: "ucoid"
+    crisis:
+      constant_fee:
+        denom: "ucoid"
+    gov:
+      deposit_params:
+        min_deposit:
+          - amount: "100000"
+            denom: "ucoid"
